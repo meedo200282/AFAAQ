@@ -1,0 +1,1430 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Cairo",sans-serif;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+:root {
+    --main-color:#2F3C7E;
+    --secondry-color:#6A8DFF;
+    --another-color:#F4A261;
+    --text-color:#333333;
+    --back-color:#e4e4e4;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.151);
+    width: 100%;
+    padding: 1px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header .logo {
+    margin-top: -40px;
+    margin-bottom: -50px;
+}
+
+.header .links a {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 15px;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+} 
+
+.header .links a:hover,
+.header .links a.active{
+    color: var(--another-color);
+}
+
+.header .bar {
+    font-size: 23px;
+    color: #fff;
+    font-weight: 700;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* home start  */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/1.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: -1;
+}
+
+.home-contant {
+    position: absolute;
+    bottom: 40%;
+    z-index: 52;
+}
+
+.home-text {
+    text-align: center;
+}
+
+.home-text h1 {
+    font-size: 40px;
+    margin: 5px 0;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.home-text h3 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.home-btn {
+    width: 100%;
+    transform: translate(-50%,-50%);
+    color: var(--text-color);
+    margin: 10px 0;
+    margin-left: 30%;
+    font-size: 17px;
+    font-weight: 700;
+    background: var(--another-color);
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.home .home-btn:hover{
+    transform: scale(2.1);
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--another-color);
+    box-shadow: 0 0 5px #fff;
+}
+/* home end  */
+
+/* about start  */
+.about {
+    background-image: url(../image/about.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.about .overlay {
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.about-text {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 22;
+}
+
+.about-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.about-text p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+/* about end  */
+
+/* why start  */
+.why {
+    background-image: url(../image/why2.webp);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.why .overlay {
+    background-color: rgba(0, 0, 0, 0.336);
+}
+
+.why-contant h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 22;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.why .box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.why .card {
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-top: 60px;
+}
+
+.why .card i {
+    font-size: 40px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.why .card p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* why end  */
+
+/* serv start  */
+.serv {
+    background-image: url(../image/5.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.serv .overlay {
+    background-color: rgba(0, 0, 0, 0.336);
+}
+
+.serv h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 22;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.serv .box {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+    justify-content: space-between;
+    z-index: 22;
+}
+
+.serv .card {
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(100% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-top: 60px;
+}
+
+.serv .card i {
+    font-size: 40px;
+    color: var(--secondry-color);
+    margin-bottom: 10px;
+}
+
+.serv .card h2 {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.serv .card p {
+    font-size: 16px;
+    font-weight: 700;
+}
+/* serv end  */
+
+/* contact start  */
+.con {
+    background-image: url(../image/2.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.con .overlay {
+    background-color: rgba(0, 0, 0, 0.336);
+} 
+
+.con h1 {
+    position: absolute;
+    top: 20%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 22;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.con .con-contant {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.con .con-contant .card .icon {
+    background-color: var(--another-color);
+    padding: 12px;
+    color: #333333;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-bottom: 15px;
+    transition: .3s ease-in-out;
+}
+
+.con .con-contant .card .icon:hover {
+    transform: scale(1.1);
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--another-color);
+    box-shadow: 0 0 5px #fff;
+}
+
+.con .con-contant .card h3 {
+    font-size: 25px;
+    color: var(--back-color);
+    transition: .3s ease-in-out;
+}
+
+.con .con-contant .card h3:hover {
+    transform: scale(1.1);
+    color: #333333;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.back {
+    background-color: black;
+    padding: 12px;
+    
+}
+
+.con .footer-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0 10px;
+}
+
+.con .footer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.con .footer-con .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.con .footer-con .links .icon {
+    /* padding-left: 50px; */
+    font-weight: 400;
+    font-size: 23px;
+    color: #e4e4e4;
+    transition: .3s ease-in-out;
+}
+
+.con .footer-con .links .icon:hover {
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+/* contact end  */
+@media (max-width:1115px) {
+    .why-contant h1 {
+        top: 17%;
+    }
+
+    .why .card {
+        margin-top: 10px;
+        width: calc(50% - 10px);
+    }
+
+    .why .card p {
+        font-size: 20px;
+    }
+
+    .serv .card {
+        width: calc(50% - 20px);
+    }
+
+    .serv .card h2 {
+        font-size: 23px;
+    }
+
+    .serv .card p {
+        font-size: 16px;
+    }
+} 
+
+@media (max-width:1025px) {
+
+    .about {
+        background-size: 100% 100%
+    }
+
+    .serv h1 {
+        top: 16%;
+    }
+
+    .serv .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .serv .card {
+        margin-top: -15px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:1000px) {
+    .header .bar {
+        display: block;
+    }
+
+    .header .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:100%;
+        right: 0;
+        width: 40%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.459);
+        border-top: .1rem solid rgba(0, 0, 0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
+        display: none;
+        transition: .10s ease-in-out;
+    }
+
+    .header .links a {
+        /* margin-right: 80px; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px;
+        padding-right: 60px;
+        transition: .3s ease-in-out;
+    }
+    .header .links.active {
+        display: block;
+    }
+}
+
+@media (max-width:930px) {
+
+    .serv h1 {
+        top: 12%;
+    }
+
+    .serv .card {
+        padding: 10px;
+        width: calc(50% - 10px);
+    }
+
+    .con .footer p {
+        font-size: 15px;
+    }
+
+    .con .footer-con .links .icon {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:895px) {
+
+    .about-text h1 {
+        font-size: 47px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+    .serv h1 {
+        top: 12.1%;
+    }
+}
+
+@media (max-width:880px) {
+    .serv .card {
+        padding: 10px;
+        width: calc(60% - 10px);
+    }
+}
+
+@media (max-width:850px) {
+
+    .about-text h1 {
+        font-size: 44px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+
+    .con .footer p {
+        font-size: 14px;
+    }
+
+    .con .footer-con .links .icon {
+          font-size: 21px; 
+    }
+}
+
+@media (max-width:760px) {
+   
+}
+
+@media (max-width:760px) {
+    .serv .card {
+        padding: 10px;
+        width: calc(65% - 5px);
+    }
+
+    .con .footer p {
+        font-size: 11px;
+    }
+
+    .con .footer-con .links .icon {
+        font-size: 19px;
+    }
+
+    .con .con-contant .card .icon {
+        padding: 12px;
+        font-size: 30px;
+    }
+
+    .con .con-contant .card h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:690px) {
+
+    .why .card {
+        padding: 20px;
+        width: calc(50% - 10px);
+        margin-top: -5px;
+    }
+
+    .serv .card {
+        padding: 10px;
+        width: calc(70% - 5px);
+    }
+
+    .header .links {
+        width: 50%;
+    }
+
+    .serv .card {
+        padding: 10px;
+        width: calc(75% - 5px);
+    }
+}
+
+@media (max-width:680px) {
+    .why .card {
+        padding: 15px;
+        width: calc(50% - 10px);
+        margin-top: -5px;
+    }
+}
+
+@media (max-width:655px) {
+
+    .header .logo {
+        margin-left: -60px;
+    }
+
+    .why .card {
+        padding: 10px;
+        width: calc(50% - 10px);
+        margin-top: -5px;
+    }
+
+    .con .footer p {
+        font-size: 10px;
+    }
+
+    .con .footer-con .links .icon {
+        font-size: 19px; 
+  }
+}
+
+@media (max-width:627px) {
+    .why-contant h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .con h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .serv .card {
+        padding: 10px;
+        width: calc(80% - 5px);
+    }
+}
+
+@media (max-width:570px) {
+
+    .why-contant h1 {
+        top: 14%;
+    }
+
+    .why .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why .card {
+        width: 100%;
+    }
+
+    .home-text h1 {
+        font-size: 35px;
+    }
+
+    .home-text h3 {
+        font-size: 17px;
+    }
+
+    .home-btn {
+        padding: 9px 13px;
+        font-size: 16px;
+    }
+
+
+    .serv .card {
+        padding: 10px;
+        width: calc(90% - 5px);
+    }
+
+    .con .footer p {
+        font-size: 9px;
+    }
+
+    .con .footer-con .links .icon {
+        font-size: 17px; 
+  }
+}
+
+@media (max-width:545px) {
+    .why-contant h1 {
+        top: 12%;
+    }
+
+    /* .con .con-contant {
+        width: 100%;
+    } */
+
+    .con .con-contant .card .icon {
+        padding: 12px;
+        font-size: 25px;
+    }
+
+    .con .con-contant .card h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:530px) {
+    .serv .card {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .serv h1 {
+        top: 12.28%;
+    }
+
+    .header .links {
+        width: 100%;
+    }
+
+    .serv .card {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .con .footer p {
+        font-size: 8px;
+    }
+
+    .con .footer-con .links .icon {
+        font-size: 15px; 
+  }
+}
+
+@media (max-width:500px) {
+
+    .home-text h1 {
+        font-size: 33px;
+    }
+
+    .home-text h3 {
+        font-size: 15px;
+    }
+
+    .home-btn {
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+
+    .serv .card p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:470px) {
+    .con .con-contant .card .icon {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .con .con-contant .card h3 {
+        font-size: 10px;
+    }
+}
+@media (max-width:430px) {
+
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+    .home-text h3 {
+        font-size: 23px;
+    }
+
+    .home-btn {
+        padding: 7px 15px;
+        font-size: 17px;
+        margin-left: 130px;
+    }
+
+    .about-text {
+        width: 90%;
+        top: 45%;
+    }
+
+    .about-text h1 {
+        font-size: 50px;
+    }
+
+    .about-text p {
+        font-size: 25px;
+    }
+
+
+    .why .box {
+        margin-top: 25px;
+        gap: 35px;
+    }
+
+    .serv h1 {
+        top: 12.3%;
+    }
+
+    .serv .box {
+        gap: 10px;
+    }
+
+    .serv .card {
+        margin-top: 20px;
+    }
+
+    .serv .card p {
+        font-size: 17.5px;
+    }
+
+    .con .footer p {
+        font-size: 7px;
+    }
+
+    .con .footer-con .links .icon {
+        font-size: 13px; 
+  }
+}
+
+@media (max-width:417px) {  
+
+    .about-text h1 {
+        font-size: 45px;
+    }
+
+    .about-text p {
+        font-size: 22px;
+    }
+
+    .why .box {
+        margin-top: 0px;
+        gap: 35px;
+    }
+
+    .why-contant h1 {
+        top: 11%;
+    }
+
+    .serv .box {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width:395px) {
+
+    .home-text h1 {
+        font-size: 38px;
+    }
+
+    .home-text h3 {
+        font-size: 23px;
+    }
+
+    .home-btn {
+        padding: 7px 15px;
+        font-size: 16px;
+        margin-left: 120px;
+    }
+
+    .serv h1 {
+        top: 12.5%;
+    }
+
+    .serv .card p {
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width:375px) {
+
+    .home-text h1 {
+        font-size: 35px;
+    }
+
+    .home-btn {
+        padding: 7px 15px;
+        font-size: 16px;
+        margin-left: 110px;
+    }
+
+    .about-text {
+        width: 90%;
+        top: 45%;
+    }
+
+    .about-text h1 {
+        font-size: 40px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+    }
+
+    .serv .card p {
+        font-size: 15px;
+    }
+}
+
+@media only screen  and  (device-width: 1024px) and (device-height: 1366px) {
+    
+    .home-text h1 {
+        font-size: 60px;
+    }
+
+    .home-text h3 {
+        font-size: 25px;
+    }
+
+    .home-btn {
+        font-size: 20px;
+        margin-left: 200px;
+
+    }
+
+    .about-text {
+        top: 37%;
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+
+    .about-text p {
+        font-size: 40px;
+    }
+   
+    .why-contant h1 {
+        top: 10%;
+        font-size: 60px;
+        width: 100%;
+    }
+   
+    .why .box {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why .card {
+        padding: 10px;
+        margin-bottom: 20px;
+        width: calc(70% - 30px);
+    }
+
+    .why .card i {
+        font-size: 70px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .why .card p {
+        font-size: 30px;
+    }
+
+    .serv h1 {
+        top: 10%;
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+    .serv .box {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .serv .card {
+        padding: 10px;
+        width: 70%;
+    }
+
+    .serv .card i {
+        font-size: 60px;
+    }
+
+    .serv .card h2 {
+        font-size: 40px;
+    }
+
+    .serv .card p {
+        font-size: 30px;
+    }
+
+    .con h1 {
+        font-size: 60px;
+    }
+
+    .con .con-contant {
+        flex-direction: column;
+        justify-content: center;
+        top: 50%;
+    }
+
+    .con .con-contant .card .icon {
+        font-size: 60px;
+        padding: 20px;
+        
+    }
+
+    .con .con-contant .card h3 {
+       font-size: 40px;
+       margin-bottom: 100px;
+    }
+}
+
+@media only screen  and (device-width: 1366px) and (device-height: 1024px) {
+    .home-text h1 {
+        font-size: 60px;
+    }
+
+    .home-text h3 {
+        font-size: 25px;
+    }
+
+    .home-btn {
+        font-size: 20px;
+        margin-left: 200px;
+
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+    }
+
+    .about-text p {
+        font-size: 25px;
+    }
+
+    .why-contant h1 {
+        font-size: 60px;
+    }
+
+    .why .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 50px);
+    }
+
+    .serv h1 {
+        font-size: 60px;
+    }
+
+    .serv .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 50px);
+    }
+
+    .con h1 {
+        font-size: 60px;
+    }
+
+    .con .con-contant .card .icon {
+        font-size: 50px;
+    }
+}
+
+@media only screen  and  (device-width: 820px) and (device-height: 1180px) {
+    
+    .home-text h1 {
+        font-size: 60px;
+    }
+
+    .home-text h3 {
+        font-size: 25px;
+    }
+
+    .home-btn {
+        font-size: 20px;
+        margin-left: 250px;
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+    }
+
+    .about-text p {
+        font-size: 25px;
+    }
+
+    .why-contant h1 {
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .why .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 50px);
+    }
+
+    .why .card i {
+        font-size: 45px;
+    }
+
+    .why .card p {
+        font-size: 25px;
+    }
+
+    .serv h1 {
+        font-size: 60px;
+    }
+
+    .serv .box {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 50px);
+    }
+
+    .serv .card i {
+        font-size: 45px;
+    }
+    
+    .serv .card h2 {
+        font-size: 35px;
+    }
+    
+    .serv .card p {
+        font-size: 20px;
+    }
+
+    .con h1 {
+        font-size: 60px;
+    }
+
+    .con .con-contant .card .icon {
+        font-size: 50px;
+    }
+
+}
+
+@media only screen  and  (device-width: 768px) and (device-height: 1024px) {
+    
+    .home-text h1 {
+        font-size: 60px;
+    }
+
+    .home-text h3 {
+        font-size: 25px;
+    }
+
+    .home-btn {
+        font-size: 20px;
+        margin-left: 250px;
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+    }
+
+    .about-text p {
+        font-size: 25px;
+    }
+
+    .why-contant h1 {
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .why .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 50px);
+    }
+
+    .why .card i {
+        font-size: 45px;
+    }
+
+    .why .card p {
+        font-size: 25px;
+    }
+
+    .serv h1 {
+        font-size: 60px;
+    }
+
+    .serv .box {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+
+    .serv .card {
+        width: calc(100% - 120px);
+    }
+
+    .serv .card i {
+        font-size: 45px;
+    }
+    
+    .serv .card h2 {
+        font-size: 35px;
+    }
+    
+    .serv .card p {
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .con h1 {
+        font-size: 60px;
+    }
+
+    .con .con-contant .card .icon {
+        font-size: 50px;
+    }
+
+}
+
+@media only screen  and  (device-width:1024px ) and (device-height:768px ) {
+    .serv .box {
+        margin-top: 50px;
+    }
+}
+
+@media only screen  and  (device-width:912px ) and (device-height:1368px ) {
+    .home-text h1 {
+        font-size: 60px;
+    }
+
+    .home-text h3 {
+        font-size: 25px;
+    }
+
+    .home-btn {
+        font-size: 20px;
+
+    }
+
+    .about-text {
+        top: 45%;
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+
+    .about-text p {
+        font-size: 40px;
+    }
+   
+    .why-contant h1 {
+        top: 10%;
+        font-size: 60px;
+        width: 100%;
+    }
+   
+    .why .box {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why .card {
+        padding: 10px;
+        margin-bottom: 5px;
+        width: calc(70% - 30px);
+    }
+
+    .why .card i {
+        font-size: 65px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .why .card p {
+        font-size: 30px;
+    }
+
+    .serv h1 {
+        top: 10%;
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+    .serv .box {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .serv .card {
+        padding: 10px;
+        width: 70%;
+    }
+
+    .serv .card i {
+        font-size: 60px;
+    }
+
+    .serv .card h2 {
+        font-size: 35px;
+    }
+
+    .serv .card p {
+        font-size: 28px;
+    }
+
+    .con h1 {
+        font-size: 60px;
+    }
+
+    .con .con-contant {
+        flex-direction: column;
+        justify-content: center;
+        top: 50%;
+    }
+
+    .con .con-contant .card .icon {
+        font-size: 60px;
+        padding: 20px;
+        
+    }
+
+    .con .con-contant .card h3 {
+       font-size: 40px;
+       margin-bottom: 100px;
+    }
+}
+
+@media only screen  and  (device-width:1368px ) and (device-height:912px ) {
+    .home-text h1 {
+        font-size: 60px;
+    }
+
+    .home-text h3 {
+        font-size: 25px;
+    }
+
+    .home-btn {
+        font-size: 20px;
+
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+    }
+
+    .about-text p {
+        font-size: 25px;
+    }
+
+    .why-contant h1 {
+        font-size: 60px;
+    }
+
+    .why .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 50px);
+    }
+
+    .serv h1 {
+        font-size: 60px;
+    }
+
+    .serv .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 50px);
+    }
+
+    .con h1 {
+        font-size: 60px;
+    }
+
+    .con .con-contant .card .icon {
+        font-size: 50px;
+    }
+}
